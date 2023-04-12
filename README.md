@@ -1,12 +1,35 @@
-# OpenCV
+# Face Recognition using OpenCV
+This project demonstrates a simple face recognition system using OpenCV and the Haar Cascade classifiers. The system captures video from the camera, detects faces, and recognizes them using machine learning algorithms.
 
-This project involves implementing an open-source script called faceapi.js into a web app for detecting emotion. This script is a JavaScript face recognition API that can be used both in the browser and with nodejs. It is built on top of the tensorflow.js core, which is a library for building and training machine learning models in JavaScript.
+## Features
+- Face detection using Haar Cascade classifiers
+- Face recognition using Local Binary Patterns Histograms (LBPH) Face Recognizer
+- Training the recognizer with images
+- Real-time face recognition from the video stream
+- Saving and loading face data using Pickle
 
-The faceapi.js library provides a range of facial recognition capabilities, including face detection, facial landmark detection, face expression recognition, and face recognition. This means that by implementing this script into a web app, developers can build powerful facial recognition applications that can detect faces, identify facial features, and recognize emotions.
+## Prerequisites
+- Python 3.6 or later
+- OpenCV
+- NumPy
+- Pillow (PIL)
+- Pickle
 
-Specifically, the project at hand uses the face expression recognition capabilities of the faceapi.js library to detect emotions. This involves analyzing facial features such as the eyebrows, eyes, mouth, and nose to determine the facial expression and, subsequently, the emotion being expressed. By detecting emotions in this way, developers can create applications that can respond to the emotional state of a user, whether it be through personalized content, targeted advertising, or other interactive features.
+## Usage
+- Clone the repository or download the source code.
+- Install the required packages using the following command:
 
-Overall, by leveraging the faceapi.js library, developers can create highly sophisticated and interactive web applications that make use of facial recognition and emotion detection. This can be especially useful in fields such as e-commerce, healthcare, and education, where understanding the emotional state of a user can have a significant impact on user experience and engagement.
+```
+  pip install -r requirements.txt
+```
+Run the Python scripts for training the recognizer and performing real-time face recognition.
 
-### More details on faceapi
-https://github.com/justadudewhohacks/face-api.js/
+## Description
+This project contains three Python scripts:
+
+- train.py - This script preprocesses the images, detects faces using Haar Cascade classifiers, trains the LBPH face recognizer, and saves the trained data and labels.
+
+- faces.py- This script captures the video stream from the camera, detects faces, and recognizes them using the trained data. The recognized person's name is displayed on the video stream.
+
+- detect.py - This script captures the video stream from the camera and detects faces using Haar Cascade classifiers. It demonstrates face detection without the recognition functionality.
+
