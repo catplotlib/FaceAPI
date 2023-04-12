@@ -1,7 +1,7 @@
 # Face Recognition using OpenCV
 This project demonstrates a simple face recognition system using OpenCV and the Haar Cascade classifiers. The system captures video from the camera, detects faces, and recognizes them using machine learning algorithms.
 
-![work14](https://user-images.githubusercontent.com/61319491/231354128-1f3d492d-e343-4fcd-8562-5af13f3bfe4a.jpeg)
+<img src="https://user-images.githubusercontent.com/61319491/231354128-1f3d492d-e343-4fcd-8562-5af13f3bfe4a.jpeg" alt="work12" width="400" height="400">
 
 ## Features
 - Face detection using Haar Cascade classifiers
